@@ -1,0 +1,16 @@
+/* 2022-06-08. Чекбоксы в выпадающем меню менеджера колонок грида */
+:host(vaadin-checkbox[theme~="grid-columns-manager"]) {
+    height: 17px;
+    margin: 3px 5px;
+}
+
+:host(vaadin-checkbox[theme~="grid-columns-manager"]) [part="label"] {
+    margin: 0;
+}
+
+
+:host(vaadin-context-menu-list-box[theme~="grid-columns-manager"]) div[part="items"] {
+    overflow-y: hidden;
+    padding-bottom: 10px;
+}
+

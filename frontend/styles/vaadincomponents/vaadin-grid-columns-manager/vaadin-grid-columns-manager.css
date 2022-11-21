@@ -1,0 +1,46 @@
+vaadin-context-menu-overlay[theme="vaadin-grid-columns-manager-context-menu"]::part(overlay) {
+    outline: auto;
+    padding: 1px;
+}
+
+vaadin-context-menu-item[theme="vaadin-grid-columns-manager-context-menu"] {
+    height: 25px;
+}
+
+/* Отключение рамки выбранного элемента */
+vaadin-context-menu-item[theme="vaadin-grid-columns-manager-context-menu"] {
+    box-shadow: inset 0 0 0 0px var(--lumo-primary-color-50pct);
+}
+
+/* Подсветка при наведении */
+vaadin-context-menu-item[theme="vaadin-grid-columns-manager-context-menu"]:hover {
+    background-color: rgba(34, 151, 70, 0.71);
+}
+
+
+
+
+
+
+
+
+
+/*
+2022-06-08. Контекстное меню для менеджера колонок в гриде
+*/
+vaadin-context-menu-overlay[theme~="grid-columns-manager"] vaadin-context-menu-list-box span[theme~="grid-columns-manager"].grid-columns-manager-header {
+    background-color: bisque;
+    padding: 5px;
+    margin: 3px 3px;
+    font-weight: bold;
+    text-align: center;
+}
+
+vaadin-context-menu-overlay[theme~="grid-columns-manager"] vaadin-context-menu-list-box vaadin-horizontal-layout {
+    margin: 5px 0;
+}
+
+vaadin-context-menu-overlay[theme~="grid-columns-manager"] vaadin-context-menu-list-box [part="items"] {
+    overflow: hidden;
+}
+
